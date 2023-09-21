@@ -1,34 +1,40 @@
-# Transformation
+# Transformation - Reverse Engineering Writeup
 
 ## Basic Information
-Category: Reverse Engineering   
-Points: 20  
+**Category:** Reverse Engineering   
+**Points:** 20  
 
-## Solving
-I have no idea what the concept of the challenge is
-  
-**Step 1:**  
-Python script to solve the challenge  
-```
-import codecs
+## Objective
 
-def main():
-	with open("enc") as file: 
-		lines = file.readlines()
+The "Transformation" challenge involves deciphering the given information to find the flag. The exact concept of the challenge may not be evident initially.
 
-		answer = ""
+## Solution
 
-		for char in lines[0]:
-			answer += hex(ord(char))[2:]
+To successfully complete the "Transformation" challenge, follow these steps:
 
-	flag = codecs.decode(answer, "hex").decode("ASCII")  
-	print(flag)
+### Step 1: Python Script to Decode
 
-main()
-```
+1. **Use Python Script:**
+   - A Python script can be used to decode the contents of a file named "enc." The script performs the necessary transformations to reveal the flag.
 
-**Step 2:**   
-Copy and paste the flag to complete the challenge  
-```picoCTF{16_bits_inst34d_of_8_04c0760d}```  
+   ```python
+   import codecs
 
-**SOLVED**  
+   def main():
+       with open("enc") as file: 
+           lines = file.readlines()
+
+           answer = ""
+
+           for char in lines[0]:
+               answer += hex(ord(char))[2:]
+
+       flag = codecs.decode(answer, "hex").decode("ASCII")  
+       print(flag)
+
+   main()
+   ```  
+
+flag: picoCTF{XXXXXXXXXX}  
+
+**Challenge Solved**  
