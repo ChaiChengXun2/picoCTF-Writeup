@@ -9,7 +9,7 @@ The concept of this challenge is to familiarise yourself with ROT13.
   
 **Step 1:**  
 You can use online tools or write python scripts. CyberChef: [CyberChef](https://cyberchef.org) can crack ROT13 encoded messages.     
-```
+```python
 def main():
 	encoded = "cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}"
 
