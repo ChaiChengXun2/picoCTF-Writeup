@@ -1,34 +1,47 @@
-# Crackme-py
+# Crackme-py - Reverse Engineering Writeup
 
 ## Basic Information
-Category: Reverse Engineering  
-Points: 30  
+**Category:** Reverse Engineering  
+**Points:** 30  
 
-## Solving
-The concept of this challenge is to familiarise yourself with python and ROT47 encoding. 
-  
-**Step 1:**  
-Download and view the python file. Comments in the file indicate that it is using ROT47 encoding. There are many tools that could solve ROT47. CyberChef: [CyberChef](https://cyberchef.org) is one of them. Or alternatively you can use python program to solve it. 
+## Objective
 
-```
-def main():
-	password = "A:4@r%uL`M-^M0c0AbcM-MFE055a4ce`eN"
+The "Crackme-py" challenge aims to test your reverse engineering skills and your ability to decode text encoded using ROT47 encoding.
 
-	answer = ""
+## Solution
 
-	for letter in password:
-		if ord(letter) + 47 < 127:
-			answer += chr(ord(letter) + 47)
-		else:
-			answer += chr(ord(letter) + 47 - 94)
+To successfully complete the "Crackme-py" challenge, follow these steps:
 
-	print(answer)
+### Step 1: Download and Analyze Python File
 
-main()
-```
+1. **Download and View Python File:**
+   - Begin by downloading the provided Python file.
+   - Open the file in a text editor or code editor to examine its contents.
+   - Comments within the file hint that it uses ROT47 encoding.
 
-**Step 3:**   
-Copy and paste the flag to complete the challenge  
-```picoCTF{1|\/|_4_p34|\|ut_dd2c4616}```  
+### Step 2: Decode ROT47 Encoding
 
-**SOLVED**  
+2. **Decode Using CyberChef or Python:**
+   - To decode the ROT47-encoded text, you have two options:
+     - Option 1: Use an online tool like [CyberChef](https://cyberchef.org). Simply paste the encoded text into the tool and select the ROT47 operation to decode it.
+     - Option 2: Use a Python program to decode it programmatically. Here's a Python script that accomplishes this:
+
+   ```python
+   def main():
+       password = "A:4@r%uL`M-^M0c0AbcM-MFE055a4ce`eN"
+
+       answer = ""
+
+       for letter in password:
+           if ord(letter) + 47 < 127:
+               answer += chr(ord(letter) + 47)
+           else:
+               answer += chr(ord(letter) + 47 - 94)
+
+       print(answer)
+
+   main()
+   ```
+Flag: picoCTF{XXXXXXXXX}  
+
+**Challenge Solved**  
