@@ -9,7 +9,7 @@ The concept of this challenge is to familiarise yourself with ASCII.
   
 **Step 1:**  
 Download & view the picture. You will find some encoding. By adding 96 to each number, you can get the corresponding ASCII value that yields the flag.     
-```
+```python
 def main():
 	encoded = "16 9 3 15 3 20 6 { 20 8 5 14 21 13 2 5 18 19 13 1 19 15 14 }"
 
