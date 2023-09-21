@@ -1,40 +1,65 @@
-# Information
+# Information - Forensics Writeup
 
 ## Basic Information
-Category: Forensics  
-Points: 10  
+**Category:** Forensics  
+**Points:** 10  
 
-## Solving
-The idea of this challenge is to familiarise yourself with Forensics. This challenge contains two processes or steps to get the flag.
-  
-**Step 1:**  
-First download the file  
-```
-wget https://mercury.picoctf.net/static/b4d62f6e431dc8e563309ea8c33a06b3/cat.jpg
-```  
+## Objective
 
-**Step 2:**   
-Run exiftool on the image  
-```exiftool cat.jpg```  
+The "Information" challenge is designed to introduce you to the field of digital forensics. This challenge consists of a series of steps to uncover the hidden flag.
 
-**Step 3:**   
-I found that ```cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9``` resembles base64 and took it to decode. You can use online tools such as [CyberChef](https://cyberchef.org/) or [dcode](https://www.dcode.fr/en)  
+## Solution
 
-Alternatively, you can use a python script  
-```
-#!/usr/bin/python3
+To successfully complete the "Information" challenge, follow these steps:
 
-import base64
+### Step 1: Download the Image
 
-def main():
-	encodedFlag = "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9"
-	print(base64.b64decode(encodedFlag))
+1. **Download the Image:**
+   - Begin by downloading the provided image using the `wget` command:
+     ```
+     wget <link>
+     ```
 
-main()
-```
+### Step 2: Analyze Image Metadata
 
-**Step 4:**  
-Copy the flag and complete the challenge  
-```picoCTF{the_m3tadata_1s_modified}```
+2. **Run `exiftool` on the Image:**
+   - Open your terminal or command prompt.
+   - Navigate to the directory where you downloaded the image.
+   - Run the following command to examine the image's metadata:
+     ```
+     exiftool <image>
+     ```
 
-**SOLVED**  
+### Step 3: Decode Base64 String
+
+3. **Identify Base64 String:**
+   - In the output from `exiftool`, you may notice a string that resembles Base64:
+     ```
+     cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9
+     ```
+
+4. **Decode Base64:**
+   - To reveal the flag, decode the Base64 string.
+   - You can use online tools like [CyberChef](https://cyberchef.org/) or [dcode](https://www.dcode.fr/en) for this purpose.
+
+Alternatively, you can use a Python script to decode the Base64 string.
+
+### Step 4: Use Python Script (Optional)
+
+5. **Use a Python Script (Optional):**
+   - If you prefer a Python solution, here's a script that decodes the Base64 string:
+   
+   ```python
+   #!/usr/bin/python3
+
+   import base64
+
+   def main():
+       encodedFlag = "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9"
+       print(base64.b64decode(encodedFlag))
+
+   main()
+   ```  
+Flag: picoCTF{XXXXXXXXXX}
+
+**Challenge Solved**  
