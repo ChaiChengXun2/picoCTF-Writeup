@@ -11,7 +11,7 @@ The concept of of this challenge is to familiarise yourself with ROT13.
 You can use online tools such as [CyberChef](https://cyberchef.org/) or [dcode](https://www.dcode.fr/en)   
 
 Or you can use a python script 
-```
+```python
 #!/usr/bin/python3
 
 import codecs
