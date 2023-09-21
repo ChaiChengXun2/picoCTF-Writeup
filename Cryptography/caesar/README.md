@@ -1,17 +1,41 @@
-# Nice Netcat...
+# Nice Netcat... - Cryptography Writeup
 
 ## Basic Information
-Category: Crytography     
-Points: 100 
+**Category:** Cryptography  
+**Points:** 100
 
-## Solving
-The concept of this challenge is to familiarise yourself with caesar cipher.
-  
-**Step 1:**  
-Use online tools  
+## Objective
 
-**Step 2:**   
-Copy and paste the flag to complete the challenge  
-```picoCTF{crossingtherubiconzaqjsscr}```  
+The "Nice Netcat..." challenge aims to introduce you to Caesar ciphers, a simple and well-known form of encryption.
 
-**SOLVED**  
+## Solution
+
+To successfully complete the "Nice Netcat..." challenge, follow these steps:
+
+### Step 1: Use Online Tools
+
+1. **Leverage Online Tools:**
+   - This challenge can be quickly solved by using online tools designed for Caesar cipher decryption.
+
+2. **Access Caesar Cipher Decryption Tool:**
+   - Visit an online Caesar cipher decryption tool, such as [dcode.fr](https://www.dcode.fr/caesar-cipher).
+
+3. **Input the Encrypted Flag:**
+   - Copy and paste the provided Caesar cipher-encrypted string into the input field.
+
+4. **Decrypt the Flag:**
+   - The online tool will automatically decrypt the Caesar cipher and display the flag.
+
+### Step 2: Copy and Paste the Flag
+
+1. **Retrieve the Flag:**
+   - After decrypting the Caesar cipher, the flag will be revealed.
+
+2. **Complete the Challenge:**
+   - Copy the flag and paste it into the provided submission box on the CTF platform.
+   
+Flag: `picoCTF{XXXXXXXX}`
+
+With these straightforward steps, you will successfully decrypt the flag and complete the "Nice Netcat..." challenge.
+
+**Challenge Accomplished**
