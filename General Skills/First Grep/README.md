@@ -1,20 +1,28 @@
-# First Grep
+# First Grep - General Skills Writeup
 
 ## Basic Information
-Category: General Skills   
-Points: 100  
+**Category:** General Skills   
+**Points:** 100  
 
-## Solving
-The concept of this challenge is to familiarise yourself with grep command in linux.  
-  
-**Step 1:**  
-Download and cat the file. Pipe the output into grep to find the flag.    
-```
-cat file | grep "pico"
-```
+## Objective
 
-**Step 2:**   
-Copy and paste the flag to complete the challenge  
-```picoCTF{grep_is_good_to_find_things_dba08a45}```  
+The "First Grep" challenge is designed to familiarize you with the `grep` command in a Linux environment. The goal is to use `grep` to search for specific text within a file.
 
-**SOLVED**  
+## Solution
+
+To successfully complete the "First Grep" challenge, follow these steps:
+
+### Step 1: Use `grep` to Find the Flag
+
+1. **Download and Cat the File:**
+   - Begin by downloading the provided file.
+   - Next, use the `cat` command to display the content of the file.
+   - Pipe the output of `cat` into `grep` to search for the flag. The flag is typically surrounded by curly braces and contains the string "pico."
+
+   ```bash
+   cat file | grep "pico"
+   ```  
+
+Flag: picoCTF{XXXXXXX}  
+
+**Challenge Solved**  
