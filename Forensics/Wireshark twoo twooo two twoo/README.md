@@ -17,15 +17,18 @@ The objective of this challenge is to extract the flag from a packet capture fil
 
 2. **Starting with HTTP Packets**
    - I decided to start by examining the HTTP packets since I was more familiar with them. I found many variations of the flag, but it was clear that submitting them wouldn't solve the challenge. 
+   ![Fake Flag](<fake flag.png>)
 
 3. **Turning to DNS Packets**
    - I proceeded to the DNS packets, which presented a more challenging task. Not going to lie, my eyes was bleeding looking through the DNS packets.
 
 4. **Identifying Base64 Encoded Message**
    - At the end of the DNS packets, I identified one end of a base64 encoded message. This discovery marked significant progress.
+   ![Tail of Base64 Encoded Message](<base64 encoded tail.png>)
 
 5. **Filtering by Source IP Address**
    - I then filtered the source IP address associated with this particular message. This reduced the dataset, making it more manageable. Not going to make any difference, since I FOUND THIS AT THE END OF ALL THE DNS PACKETS.
+   ![Filtered Packets](filtered.png)
 
 6. **Addressing Duplication**
    - However, a new issue arose as I noticed the duplication of the string "fQ==". To address this, I determined that the duplication occurred because the message was sent to different domains with the same prefix.
@@ -41,6 +44,7 @@ The objective of this challenge is to extract the flag from a packet capture fil
         ((dns) && (ip.src == 18.217.1.57)) && (dns.qry.name contains "reddshrimpandherring.com.windomain.local")
         ```
    - This filter helped narrow down the results.
+   ![Final Filtering](final.png)
 
 8. **Dealing with Final Duplication**
    - Despite the filtering efforts, I couldn't find obvious differences to filter out the final duplicating ```fQ==```. As a result, there would be two instances in the output.
