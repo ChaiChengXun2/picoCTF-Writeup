@@ -13,7 +13,7 @@ The objective of this challenge is to extract the flag from a packet capture fil
 1. **Analyzing the Packet Capture**
    - To begin the challenge, I opened the provided packet capture file in Wireshark. Upon initial inspection, I noticed a significant number of DNS packets, making up 31.1% of the traffic, and HTTP packets, accounting for 16.6%.
    - This can be done by looking at the protocol hierarchy.
-   ![Protocol Hierarchy](Protocol Hierarchy.png)
+   ![Protocol Hierarchy](<Protocol Hierarchy.png>)
 
 2. **Starting with HTTP Packets**
    - I decided to start by examining the HTTP packets since I was more familiar with them. I found many variations of the flag, but it was clear that submitting them wouldn't solve the challenge. 
