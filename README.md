@@ -4,7 +4,7 @@ Welcome to my picoCTF writeups! 🎉
 
 ## My Approach
 
-As a passionate cybersecurity enthusiast, I approach the Huntress CTF with the following goals:
+As a passionate cybersecurity enthusiast, I approach the picoCTF with the following goals:
 
 - **Learn:** Every challenge is an opportunity to learn something new, whether it's a new technique, tool, or concept.
 - **Collaborate:** I enjoy collaborating with fellow participants to share insights and knowledge, making the journey more enriching.
