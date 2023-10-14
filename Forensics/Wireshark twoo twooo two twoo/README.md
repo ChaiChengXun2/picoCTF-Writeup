@@ -1,7 +1,7 @@
 # CTF Challenge Writeup
-**Name:** Wireshark twoo twooo two twoo...
-**Points:** 100
-**Category:** Forensics
+**Name:** Wireshark twoo twooo two twoo...  
+**Points:** 100  
+**Category:** Forensics  
 
 ## Objective
 
